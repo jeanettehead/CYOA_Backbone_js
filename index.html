@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" href="overflow.css">
     <script type="text/javascript" src="vendor/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="vendor/backbone.js"></script>
     <script type="text/javascript" src="scripts/namespaces.js"></script>
 </head>
 <body>
@@ -22,8 +23,8 @@
 	            <input id="userName" type="text"/>
 	            <a id="logIn" class="button">That's me!</a>
 	        </div>
-	        <div id="newQuestionView">
-	            <label for="newQuestion" id="questionPrompt">Adventurer wants to know...</label>
+	        <div id="newQuestionView" class="hidden">
+	            <label for="newQuestion" id="questionPrompt"><span id="asker">Adventurer</span> wants to know...</label>
 	            <textarea cols=20 rows=2 id="newQuestion" name="newQuestion"></textarea>
 	            <a id="addItem" class="button">Ask now!</a>
 	        </div>
@@ -55,5 +56,8 @@
 	</div>
 
   <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/models/user.js"></script>
+  <script type="text/javascript" src="scripts/views/login.js"></script>
+  <script type="text/javascript" src = "scripts/views/new_question.js"></script>
 </body>
 </html>
